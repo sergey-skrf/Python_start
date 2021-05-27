@@ -1,0 +1,4 @@
+Ivanov 50000
+Petrov 25000
+Sidorov 15000
+Shtir 10000
