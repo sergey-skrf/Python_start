@@ -14,3 +14,23 @@ while i < len(mod_number): # в цикле проводим сравнение �
 	else:
 		i += 1
 print(max_number)
+
+
+
+
+
+#Решение преподавателя
+number = input('Введите целое положительное число:\n')
+if number.isdigit():
+	number = int(number)
+	summury = 0
+	big_num = 0
+	while number:
+		if number % 10 > big_num:
+			big_num = number % 10
+		summury += number % 10
+		number //= 10
+	print(f'Сумма равна: {summury}')
+	print(f'Самая большая цифра: {big_num}')
+else:
+	print('Введено не число')
