@@ -20,3 +20,28 @@ def division_two_number():
 		return number_1/number_2
 
 print(division_two_number())
+
+
+
+
+# Вариант решения преподавателя
+
+def division(a: float, b: float):
+	'''
+	делит a на b
+	:param a:
+	:param b:
+	:return: float or None
+	'''
+	try:
+		return a / b
+	except ZeroDivisionError as e:
+		print('Нельзя делить на ноль')
+
+
+division2 = lambda a, b: a / b if b else None
+
+assert division(4, 2) == 2, 'division(4, 2)'
+
+
+assert division2(4, 2) == 2, 'division(4, 2)'
