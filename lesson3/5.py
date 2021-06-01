@@ -40,3 +40,26 @@ else:
 	my_func(user_data)
 	
 
+#Вариант преподователя
+
+def insert_sum(*args):
+	result = 0
+	exit_flag = False
+	try:
+		for itm in args:
+			result += float(itm) if itm else 0
+		except VaiueError as e:
+			exit_flag = not exit_flag
+		return result, exit_flag
+
+user_sum = 0
+while True:
+	user_input = input('Введите число').split(' ')
+	result_sum, user_exit = insert_sum(*user_input)
+	user_sum += result_sum
+	print('user_sum')
+
+
+if user_exit:
+	print('Досвидания')
+	break
