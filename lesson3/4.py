@@ -39,3 +39,16 @@ def my_func_2(x, y):
 	return 1/composition
 	
 print(my_func_2(12, -2))
+
+
+
+#Варианты преподавателя
+
+from functools import reduce
+
+def my_func(x: float, y: int):
+	result = 1
+	for _ in range(abs(y)):
+		result *= x
+	return result if y > 0 else 1 / result
+
