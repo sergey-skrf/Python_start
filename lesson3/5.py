@@ -20,6 +20,7 @@ def my_func(user_data):
 
 	str --> int 
 	'''
+
 	global summ
 	user_data_list = user_data.split()
 	for el in user_data_list:
@@ -38,7 +39,7 @@ while regex.search(user_data) == None:
 	user_data = input('Введите строку чисел, разделенных пробелом:\n')
 else:
 	my_func(user_data)
-	
+
 
 #Вариант преподователя
 
@@ -48,18 +49,17 @@ def insert_sum(*args):
 	try:
 		for itm in args:
 			result += float(itm) if itm else 0
-		except VaiueError as e:
-			exit_flag = not exit_flag
-		return result, exit_flag
+	except ValueError as e:
+		exit_flag = not exit_flag
+	return result, exit_flag
 
 user_sum = 0
 while True:
 	user_input = input('Введите число').split(' ')
 	result_sum, user_exit = insert_sum(*user_input)
 	user_sum += result_sum
-	print('user_sum')
+	print(user_sum)
 
-
-if user_exit:
-	print('Досвидания')
-	break
+	if user_exit:
+		print('Досвидания')
+		break
