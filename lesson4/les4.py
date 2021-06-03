@@ -46,3 +46,4 @@ with open(file_path, 'r') as file:
 	for line in file:
 		prinit(line)
 
+#4 Генераторы
