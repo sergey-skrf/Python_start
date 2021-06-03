@@ -3,6 +3,7 @@ import sys
 import json
 import reguests
 
+#1
 base_url = 'https://api.github.com/users/'
 user_name = sys.argv[1]
 
@@ -20,4 +21,28 @@ with open(file_path, 'r') as file:
 	j_data = json.loads(data)
 	print(j_data)
 
-#print(os.getcwd())	
+#print(os.getcwd())
+
+
+#2
+
+list_comp = [itm for itm in range(10)]
+dict_comp = {idx: itm for idx, itm in enumerate(range(10), start=5)}
+print(list_comp)
+print(dict_comp)
+
+
+#3
+file_folder = os.getcwd()
+file_path = os.path.join(file_folder, 'some_file.txt')
+print(file_path)
+
+with open(file_path, 'w') as file:
+	for key, value in dict_comp.items():
+		file.write(f'{key}------{value}\n')
+
+
+with open(file_path, 'r') as file:
+	for line in file:
+		prinit(line)
+
