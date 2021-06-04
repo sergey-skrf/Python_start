@@ -3,3 +3,4 @@ def my_fun(x):
 	while i < x:
 		yield i
 		i += 1
+	    yield i * 2
