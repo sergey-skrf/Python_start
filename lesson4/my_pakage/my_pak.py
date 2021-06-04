@@ -1,5 +1,5 @@
 def my_fun(x):
 	i = 0
-	while x:
+	while i < x:
 		yield i
 		i += 1
