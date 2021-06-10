@@ -20,3 +20,22 @@ def fibo_gen(number):
 # вызываем функцию
 for el in fibo_gen(15):
     print(el)
+
+
+
+
+
+#Вариант решения преподавателя
+
+from itertools import (count, cycle, )
+
+def inf_numbers(start):
+    while True:
+         yield start
+        start += 1
+
+
+tmp = [1, 2, 3, 4]
+
+cycle_iter = cycle(tmp)
+inf_numbers2 = count(2)
