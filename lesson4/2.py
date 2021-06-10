@@ -24,7 +24,7 @@ def test_iter(*args):
 	prev = float('inf') * -1
 
 	for idx, itm in enumerate(args):
-		if idx and itm > prev:
+		if itm > prev:
 			yield itm
 		prev = itm
 
@@ -38,7 +38,7 @@ print(new_list)
 
 
 if __name__ == '__main__':
-	assert list(test_iter(1, 2, 3, 4, 5, 6, 7, 8)) == [2, 3, 4, 5, 6, 7, 8], 'one'
-	assert list(test_iter(-1, 3, 6, 12, -5, 0, 2, 7)) == [3, 6, 12, 0, 2, 7], 'two'
-	assert list(test_iter(1)) == [], 'three'
+	assert list(test_iter(1, 2, 3, 4, 5, 6, 7, 8)) == [1, 2, 3, 4, 5, 6, 7, 8], 'one'
+	assert list(test_iter(-1, 3, 6, 12, -5, 0, 2, 7)) == [-1, 3, 6, 12, 0, 2, 7], 'two'
+	assert list(test_iter(1)) == [1], 'three'
 	assert list(test_iter()) == [], 'four'
