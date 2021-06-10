@@ -27,15 +27,21 @@ for el in fibo_gen(15):
 
 #Вариант решения преподавателя
 
-from itertools import (count, cycle, )
+from functools import reduce
 
-def inf_numbers(start):
+def fido_gen1():
+    factor = 1
     while True:
-         yield start
-        start += 1
+        if factor > 1:
+            yield reduce(lambda x, y: x * y, range(1, factor+1))
+        else:
+            yield 1
+        factor += 1
 
 
-tmp = [1, 2, 3, 4]
+if __name__ == '__main__':
+    for idx, num in enumerate(fido_gen1(), start=1):
+        print(idx, num)
+        if idx == 15:
+            break
 
-cycle_iter = cycle(tmp)
-inf_numbers2 = count(2)
