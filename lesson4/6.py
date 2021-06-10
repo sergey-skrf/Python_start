@@ -20,3 +20,28 @@ def fibo_gen(number):
 # вызываем функцию
 for el in fibo_gen(15):
     print(el)
+
+
+
+
+
+#Вариант решения преподавателя
+
+from functools import reduce
+
+def fido_gen1():
+    factor = 1
+    while True:
+        if factor > 1:
+            yield reduce(lambda x, y: x * y, range(1, factor+1))
+        else:
+            yield 1
+        factor += 1
+
+
+if __name__ == '__main__':
+    for idx, num in enumerate(fido_gen1(), start=1):
+        print(idx, num)
+        if idx == 15:
+            break
+
