@@ -15,3 +15,12 @@ list_number = [itm for itm in range(100, 1001) if itm % 2 == 0]
 # производим вычесление всех элементов списка с помощью reduce
 multiplication = reduce(lambda a, x: a * x, list_number)
 print(multiplication)
+
+
+
+#Вариант решения преподавателя
+
+from functools import reduce
+
+result_list = [itm for itm in range(100, 1001) if not itm % 2]
+result_composition = reduce(lambda x, y: x * y, result_list)
