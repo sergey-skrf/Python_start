@@ -27,3 +27,14 @@ for el in user_data.split():
 	new_list.append(int_func(el))
 
 print(' '.join(new_list))
+
+
+#Вариант решения преподавателя
+
+def int_func1(string: str):
+	return ''.join((string[0].upper(), string[1:])) if string else string
+
+def user_temp(string: str):
+	return ' '.join(map(int_func1, string.split(' ')))
+
+print(user_temp('вот так'))
