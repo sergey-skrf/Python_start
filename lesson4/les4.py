@@ -2,7 +2,9 @@ import os
 import sys
 import json
 import reguests
+from my_pakage.my_pak import my_fun
 
+'''
 #1
 base_url = 'https://api.github.com/users/'
 user_name = sys.argv[1]
@@ -46,4 +48,7 @@ with open(file_path, 'r') as file:
 	for line in file:
 		prinit(line)
 
+'''
 #4 Генераторы
+for itm in my_fun(5):
+	print(itm)
