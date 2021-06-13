@@ -16,7 +16,7 @@ class Car:
 		self.is_police = is_police
 
 	def show_speed(self):
-		print (f'Скорость автомобиля {self.name} равна {self.speed}.')
+		print(f'Скорость автомобиля {self.name} равна {self.speed}.')
 
 	def go(self):
 		print(f'Автомобиль {self.name} поехал. Цвет {self.color}')
@@ -35,7 +35,7 @@ class TownCar(Car):
 
 	def show_speed(self):
 		if self.speed > 60:
-			print (f'Скорость автомобиля {self.name} равна {self.speed}. Вы превышаете скорость.')
+			print(f'Скорость автомобиля {self.name} равна {self.speed}. Вы превышаете скорость.')
 
 class SportCar(Car):
 
@@ -50,7 +50,7 @@ class WorkCar(Car):
 
 	def show_speed(self):
 		if self.speed > 40:
-			print (f'Скорость автомобиля {self.name} равна {self.speed}. Вы превышаете скорость.')
+			print(f'Скорость автомобиля {self.name} равна {self.speed}. Вы превышаете скорость.')
 
 
 class PoliceCar(Car):
