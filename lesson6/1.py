@@ -9,11 +9,21 @@
  реализовав проверку порядка режимов, и при его нарушении выводить соответствующее сообщение и завершать скрипт.
 """
 
-class TrafficLight:
-	
-	#атрибут
-	__color = ('red', 'yellow', 'green')
+#Вариант решения преподавателя
 
-	# метод
+import time
+import itertools
+
+class Trafficlight:
+	__modes = (('read', 7), ('yellow', 2), ('green', 6), ('yellow', 2))
+	__light_start = 0
+	__next_light = 0
+
+	def __init__(self):
+		self.__color = self.__modes[0][0]
+
 	def running(self):
-
+		for mode in cycle(self, __modes):
+			self.__color = mode[0]
+			print(self.__color)
+			time.sleep(mode[1])
