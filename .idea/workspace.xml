@@ -42,7 +42,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Python_start" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Python_start" />
+      </console-settings>
+    </option>
   </component>
   <component name="RunManager" selected="Python.5">
     <configuration name="2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -200,26 +208,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1623429408166" />
-    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1623560656890">
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1623560696698">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1623560656890" />
-    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1623560656890">
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1623560696698" />
+    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1623560696698">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1623560656890" />
-    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1623560656890">
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1623560696698" />
+    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1623560696698">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1623560656890" />
-    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1623560656890">
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1623560696698" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1623560696698">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1623560656890" />
-    <state x="184" y="14" key="SettingsEditor" timestamp="1622134634602">
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1623560696698" />
+    <state x="184" y="14" key="SettingsEditor" timestamp="1623562704449">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1622134634602" />
+    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1623562704449" />
     <state x="500" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622560824600">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
