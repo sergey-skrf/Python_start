@@ -25,7 +25,7 @@ class Matrix:
             while n < len(self.matrix[i]):
                 self.matrix[i][n] = self.matrix[i][n] + other.matrix[i][n]
                 n += 1
-            n = 0
+            #n = 0
             i += 1
         return Matrix(self.matrix)
 
