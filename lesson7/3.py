@@ -24,27 +24,35 @@
 Тогда метод make_order() вернет строку: *****\n*****\n*****.
 '''
 
-class Matrix:
-    def __init__(self, matrix):
-        self.matrix = matrix
+#Решение преподавателя
+
+class BioCellError(Exception):
+    def __init__(self, message: str):
+        self.message = message
+        Exception.__init__(self)
 
     def __str__(self):
-        return f'{self.matrix[0]}\n{self.matrix[1]}\n{self.matrix[2]}\n'
+        return self.message
+
+
+class BioCel:
+    def __init__(self, cells: int):
+        if isinstance(cells, int):
+            if cells > 0:
+                self.__cells = cells
+            else:
+                raise BioCellError('cell cannot be less than or zero')
+        else:
+            raise TypeError
+
+    @property
+    def cells(self):
+        return self.__cells
 
     def __add__(self, other):
-        i = 0
-        while i < len(self.matrix):
-            n = 0
-            while n < len(self.matrix[i]):
-                self.matrix[i][n] = self.matrix[i][n] + other.matrix[i][n]
-                n += 1
-            n = 0
-            i += 1
-        return Matrix(self.matrix)
+        return BioCel(self.cells + other.cells)
 
-mc1 = Matrix([[31, 22], [37, 43], [51, 100]])
-mc2 = Matrix([[69, 78], [63, 57], [49, 99]])
-print(mc1)
-print(mc2)
-print(mc1 + mc2)
+    def __sub__(self, other):
+        if self.cells - other.cells > 0:
+            r
 
