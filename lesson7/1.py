@@ -10,7 +10,7 @@ Matrix (двух матриц).  Результатом сложения дол�
 Подсказка: сложение элементов матриц выполнять поэлементно — первый элемент первой строки первой матрицы
 складываем с первым элементом первой строки второй матрицы и т.д.
 '''
-
+'''
 class Matrix:
     def __init__(self, matrix):
         self.matrix = matrix
@@ -34,3 +34,26 @@ mc2 = Matrix([[69, 78], [63, 57], [49, 99]])
 print(mc1)
 print(mc2)
 print(mc1 + mc2)
+
+'''
+
+#  Решение преподавателя
+class Matrix:
+
+    def __init__(self, *lines):
+        self._matrix = lines
+
+    def __str__(self):
+        return "\n".join([' '.join(map(lambda itm: str(itm), line)) for line in self._matrix])
+
+    def __add__(self, other):
+        return Matrix(*(map(lambda args: tuple(sum(arg) for arg in args), map(lambda itm: tuple(zip(*itm)), zip(self._matrix, other._matrix)))))
+
+    @staticmethod
+    def sum(*args):
+        pass
+
+if __name__ == '__main__':
+    matrix = Matrix((1, 2), (3, 4), (5, 6))
+    matrix2 = Matrix((2, 5), (6, 1), (4, 7))
+    print(matrix + matrix2)
