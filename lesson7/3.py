@@ -54,5 +54,25 @@ class BioCel:
 
     def __sub__(self, other):
         if self.cells - other.cells > 0:
-            r
+            return BioCel(self.cells - other.cells)
+        else:
+            raise BioCellError('cell cannot be less than or zero')
+
+    def __mul__ (self, other):
+        return BioCel(self.cells * other.cells)
+
+    def __truediv__(self, other):
+        return BioCel(self.cells / other.cells)
+
+    def make_other(self, column: int):
+        if not self.cells % column:
+            return f"{'*' * column}\n" * (self.cells // column)
+        else:
+            return f"{'*' * column}\n" * (self.cells // column) + f"{'*' * (self.cells % column)}\n"
+
+
+if __name__ == '__main__':
+    a = BioCel(12)
+    b = BioCel(22)
+    c = a - b
 
